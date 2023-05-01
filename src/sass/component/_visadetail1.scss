@@ -1,0 +1,84 @@
+.header-visa-detail {
+    margin: -30px -30px -70px -30px;
+    padding: 30px 30px 70px 30px;
+    border-radius: 10px 10px 0px 0px;
+    background: rgb(65, 93, 117);
+    background: linear-gradient(117deg, rgb(65, 93, 117) 0%, rgb(15, 29, 42) 100%);
+
+    .header-account {
+        margin-bottom: 0px;
+    }
+
+    .money-count{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .available {
+            color: #86BC8A;
+            font-size: 11px;
+        }
+        .count-money {
+            display: flex;
+            flex-direction: row;
+            font-size: 1.7rem;
+            color: #fff;
+            margin: 10px 0px;
+
+            .dollar {
+                font-size: 12px;
+                background-color: #0f253c;
+                padding: 6px 7px 6px 7px;
+                border-radius: 50px;
+                line-height: 0.2;
+                font-weight: 600;
+                align-items: center;
+                display: flex;
+                margin: 3px 10px 3px 3px;
+            }
+
+            .date-money {
+                font-size: 13px;
+                color: $bluenumber;
+            }
+        }
+    }
+
+    .date-money {
+        font-size: 13px;
+        color:$bluenumber;
+    }
+
+    .number-card-container {
+        padding: 18px 20px 18px 20px;
+        background-color: #ffffff0a;
+        border-radius: 10px;
+
+        .card-section2{
+            margin: 0px 0px 0px 0px;
+
+            .number-card{
+                font-size: 21px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+
+.detail-right2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65px;
+    align-items: center;
+    font-size: 12px;
+
+    .icon-calendar {
+        width: 13px;
+    }
+}

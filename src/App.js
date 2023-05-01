@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import './sass/main.scss';
 import './App.css';
+import Visa from './content/visa';
+import VisaDetail1 from './content/VisaDetail1';
+import HeaderRoute from './component/HeaderRoute';
+import Robotwalk from './content/Robotwalk';
+import {Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderRoute/>
+      <Routes>
+        <Route exact path="/" element={<Visa/>}/>
+        <Route path="/visadetail1" element={<VisaDetail1/>}/>
+        <Route path="/robotwalk" element={<Robotwalk/>}/>
+      </Routes>
     </div>
   );
 }
